@@ -61,7 +61,6 @@ PRODUCT_BUILD_VENDOR_IMAGE := true
 PRODUCT_BUILD_VENDOR_DLKM_IMAGE := true
 PRODUCT_BUILD_PRODUCT_IMAGE := false
 PRODUCT_BUILD_SYSTEM_EXT_IMAGE := false
-PRODUCT_BUILD_ODM_IMAGE := false
 ifeq ($(ENABLE_AB), true)
 PRODUCT_BUILD_CACHE_IMAGE := false
 else
@@ -212,7 +211,6 @@ TARGET_KERNEL_DLKM_FASTRPC_OVERRIDE := true
 #####Dynamic partition Handling
 ###
 #### Turning this flag to TRUE will enable dynamic partition/super image creation.
-PRODUCT_BUILD_ODM_IMAGE := true
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += fastbootd
 # Add default implementation of fastboot AIDL.
