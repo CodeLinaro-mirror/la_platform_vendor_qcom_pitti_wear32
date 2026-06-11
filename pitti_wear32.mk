@@ -6,8 +6,9 @@ BUILD_BROKEN_DUP_RULES := true
 
 RELAX_USES_LIBRARY_CHECK := true
 
-#Flag to Enable 64 bit only configuration
-TARGET_SUPPORTS_64_BIT_ONLY := true
+TARGET_SUPPORTS_WEARABLES := true
+TARGET_SUPPORTS_WEAR_OS := false
+TARGET_SUPPORTS_WEAR_ANDROID := true
 
 # Default Android A/B configuration
 ENABLE_AB ?= true
