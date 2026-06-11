@@ -280,6 +280,7 @@ PRODUCT_MODEL := pitti for arm64
 #----------------------------------------------------------------------
 # wlan specific
 #----------------------------------------------------------------------
+ifeq ($(BOARD_HAS_QCOM_WLAN), true)
 ifeq ($(TARGET_USES_QMAA), true)
 ifneq ($(TARGET_USES_QMAA_OVERRIDE_WLAN), true)
 include device/qcom/wlan/default/wlan.mk
@@ -288,6 +289,7 @@ include device/qcom/wlan/pitti/wlan.mk
 endif
 else
 include device/qcom/wlan/pitti/wlan.mk
+endif
 endif
 
 #----------------------------------------------------------------------
