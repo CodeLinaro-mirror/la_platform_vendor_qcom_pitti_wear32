@@ -83,7 +83,11 @@ VENDOR_DATETIME_WHITELIST = {
     "vendor/qcom/proprietary/qvr-vndr/tools/qvrdatalogger/Android.mk",
 }
 
-VENDOR_TARGET_PRODUCT_WHITELIST = {}
+VENDOR_TARGET_PRODUCT_WHITELIST = {
+    "device/qcom/common/utils.mk",
+    "device/qcom/common/base.mk",
+    "device/qcom/common/rootdir/etc/init.qcom.early_boot.sh",
+}
 
 VENDOR_RECURSIVE_WHITELIST = {}
 
