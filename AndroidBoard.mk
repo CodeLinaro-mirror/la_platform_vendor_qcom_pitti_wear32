@@ -84,6 +84,18 @@ endif
 LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)
 include $(BUILD_PREBUILT)
 
+# Runtime Resource Overlay package definition
+include $(CLEAR_VARS)
+
+LOCAL_VENDOR_MODULE := true
+LOCAL_CERTIFICATE := platform
+LOCAL_MANIFEST_FILE := frameworks/AndroidManifest.xml
+LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/frameworks/res
+LOCAL_PACKAGE_NAME := FrameworksResTargetGo
+LOCAL_SDK_VERSION := current
+
+include $(BUILD_RRO_PACKAGE)
+
 include $(CLEAR_VARS)
 ifeq ($(ENABLE_AB), true)
     LOCAL_MODULE       := charger_fw_fstab.qti
