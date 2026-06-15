@@ -10,6 +10,8 @@ TARGET_SUPPORTS_WEARABLES := true
 TARGET_SUPPORTS_WEAR_OS := false
 TARGET_SUPPORTS_WEAR_ANDROID := true
 
+BOARD_DLKM_DIR := device/qcom/common/dlkm
+
 # Default Android A/B configuration
 ENABLE_AB ?= true
 
