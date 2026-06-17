@@ -498,17 +498,10 @@ $(warning "BOARD_VNDK_VERSION = $(BOARD_VNDK_VERSION), RECOVERY_SNAPSHOT_VERSION
 
 TARGET_MOUNT_POINTS_SYMLINKS := false
 
-# Fingerprint feature
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
-
 # Wearable features override
 PRODUCT_COPY_FILES += \
     device/qcom/pitti_wear32/wearable_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/wearable_core_hardware.xml
 
-# system prop for enabling QFS (QTI Fingerprint Solution)
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.qfp=true
 #target specific runtime prop for qspm
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qspm.enable=true
