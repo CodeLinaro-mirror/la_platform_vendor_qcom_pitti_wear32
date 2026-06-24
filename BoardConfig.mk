@@ -28,7 +28,7 @@ endif
 
 BOARD_RAMDISK_USE_LZ4 := true
 MALLOC_SVELTE := true
--include $(QCPATH)/common/pitti/BoardConfigVendor.mk
+-include $(QCPATH)/common/pitti_wear32/BoardConfigVendor.mk
 
 SECTOOLS_SECURITY_PROFILE := $(QCPATH)/securemsm/security_profiles/pitti_tz_security_profile.xml
 
