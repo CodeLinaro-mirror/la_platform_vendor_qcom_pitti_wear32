@@ -368,6 +368,10 @@ PRODUCT_PACKAGES += \
   update_engine_sideload
 endif
 
+# enforce lcd_density to 160
+PRODUCT_PROPERTY_OVERRIDES  += \
+    ro.sf.lcd_density=160
+
 # Enable incremental fs
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.incremental.enable=yes
