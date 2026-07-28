@@ -31,5 +31,6 @@
     <unavailable-feature name="android.software.controls"/>
     <unavailable-feature name="android.software.app_widgets"/>
     <unavailable-feature name="android.hardware.sensor.proximity"/>
+    <unavailable-feature name="android.software.device_lock"/>
 
 </permissions>
