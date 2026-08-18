@@ -61,4 +61,4 @@ system_dlkm                                             /system_dlkm           e
 #/dev/block/bootdevice/by-name/spunvm                    /mnt/vendor/spunvm     vfat    noatime,nosuid,nodev,context=u:object_r:vendor_spunvm_file:s0   wait,check,formattable
 
 # zramsize is set as 2GB, Assuming the max RAM size of 3GB.
-/dev/block/zram0                                        none                   swap    defaults                                             zramsize=2147483648,max_comp_streams=8,zram_backingdev_size=1024M,swapprio=32758
+/dev/block/zram0                                        none                   swap    defaults                                             zramsize=805306368,max_comp_streams=8,zram_backingdev_size=1024M,swapprio=32758
