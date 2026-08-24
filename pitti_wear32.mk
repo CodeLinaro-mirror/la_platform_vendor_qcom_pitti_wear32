@@ -587,6 +587,10 @@ PRODUCT_PACKAGES_DEBUG += thermal-test-client
 PRODUCT_PROPERTY_OVERRIDES += \
      ro.mediaserver.64b.enable=false
 
+# Disable extra debug ftrace instances on this 2GB wear target to reclaim slab
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.tracing.enabled=0
+
 # Enable support for APEX updates
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
