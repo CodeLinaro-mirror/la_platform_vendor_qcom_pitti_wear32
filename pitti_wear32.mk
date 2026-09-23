@@ -591,6 +591,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.tracing.enabled=0
 
+# Pitti-specific QMMI init services.
+PRODUCT_COPY_FILES += \
+    device/qcom/pitti_wear32/rootdir/etc/init.qcom.qmmi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qcom.qmmi.rc
+
 # Enable support for APEX updates
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 

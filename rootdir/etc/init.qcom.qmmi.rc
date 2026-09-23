@@ -1,0 +1,32 @@
+#
+# Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+
+# QMMI internal loopback tests.
+# mic1
+service vendor.qmmi_audio_tc6 /vendor/bin/mm-audio-ftm -tc 6 -c /vendor/etc/ftm_test_config_pitti-wear-snd-card -d 40
+    user audio
+    group audio
+    disabled
+    oneshot
+
+# mic2
+service vendor.qmmi_audio_tc7 /vendor/bin/mm-audio-ftm -tc 7 -c /vendor/etc/ftm_test_config_pitti-wear-snd-card -d 40
+    user audio
+    group audio
+    disabled
+    oneshot
+
+# mic3
+service vendor.qmmi_audio_tc8 /vendor/bin/mm-audio-ftm -tc 8 -c /vendor/etc/ftm_test_config_pitti-wear-snd-card -d 40
+    user audio
+    group audio
+    disabled
+    oneshot
+
+# mic4
+service vendor.qmmi_audio_tc9 /vendor/bin/mm-audio-ftm -tc 9 -c /vendor/etc/ftm_test_config_pitti-wear-snd-card -d 40
+    user audio
+    group audio
+    disabled
+    oneshot
